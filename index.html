@@ -24,7 +24,7 @@
 </style>
 <style>
     
-a{
+#gsbutton{
     position: relative;
     display: inline-block;
     padding: 25px 30px;
@@ -38,16 +38,16 @@ a{
     border-radius: 2px;
 }
 
-a:hover{
+#gsbutton:hover{
     color: #fff;
 }
 
-a span{
+#gsbutton span{
     position: absolute;
     display: block;
 }
 
-a span:nth-child(1){
+#gsbutton span:nth-child(1){
     top: 0;
     left: 0;
     width: 100%;
@@ -66,7 +66,7 @@ a span:nth-child(1){
     }
 }
 
-a span:nth-child(2){
+#gsbutton span:nth-child(2){
     top: -100px;
     right: 0;
     width: 2px;
@@ -86,7 +86,7 @@ a span:nth-child(2){
     }
 }
 
-a span:nth-child(3){
+#gsbutton span:nth-child(3){
     bottom: 0;
     right: 0;
     width: 100%;
@@ -106,7 +106,7 @@ a span:nth-child(3){
     }
 }
 
-a span:nth-child(4){
+#gsbutton span:nth-child(4){
     bottom: -100%;
     left: 0;
     width: 2px;
@@ -135,6 +135,9 @@ a span:nth-child(4){
     background-size: cover;
     border-radius: 16px;
 }
+#shadowbox{
+    border-radius: 24px;
+}
 @media screen and (max-width: 992px) {
   #featbod{
       background: #e7dfd296;
@@ -153,16 +156,14 @@ Consult a dentist via toll free number</p>
                 </div>
             </div>
             <br>
-            <br>
-            <br>
-            <div class="row pt-5">
+            <div class="row pt-3">
                 <div class="col-md-5 ">
                     <img src="images/logo.png" alt="">
                     <br>
                     <br>
                     <h3 class="w-75 text-white" style="font-weight: 400;">Because everyone deserves the best dental care.</h3>
                     <h3 class="text-white" style="font-weight: 600;">#keepsmiling</h3>
-                    <a href="#">
+                    <a href="#" id="gsbutton">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -172,25 +173,22 @@ Consult a dentist via toll free number</p>
                     
                 </div>
                 <div class="col-md-7 mt-auto h-100 text-center">
-                    <img style="" class="w-100 "  src="images/doctor.png" alt="">
+                    <img class="w-100 "  src="images/doctor.png" alt="">
                 </div>
             </div>
         </div>
     </div>
     <br>
-    
     <div class="container">
-        <div class="row mx-1" id="featbod" style="">
+        <div class="row mx-1" id="featbod">
             <div class="col-md-2"></div>
             <div class="col-md-10 pb-5 ">
                 <br><br>
                 <div class="row">
-
                     <div class="col-md-5"></div>
                     <div class="col-md-7 ml-auto p-3">
-    
-                        <h1>Features</h1>
-                        <p >While not everyone has access to a dentist, most Indians have a mobile phone. Dentists for Me is a free online consultation service that connects people with leading dentists, using just their phone. To make this possible, we have partnered with over 150+ dentists across the country, to provide the best oral care to anyone and everyone.</p>
+                        <h1 class="" style="color: red;">Features</h1>
+                        <h6 class="text-dark">While not everyone has access to a dentist, most Indians have a mobile phone. Dentists for Me is a free online consultation service that connects people with leading dentists, using just their phone. To make this possible, we have partnered with over 150+ dentists across the country, to provide the best oral care to anyone and everyone.</p>
                     </div>
                 </div>
                 <br><br>
@@ -230,8 +228,143 @@ audio or video call</p></div>
             </div>
         </div>
         <br>
-        <br>
+        <div class="row">
+
+            <div class="col-md-1"></div>
+            <div class="col-md-5 mb-4">
+                <h1 class="my-3">How it works</h1>
+                <p class="text-secondary">
+                    You can connect with a dentist with a few simple clicks, or simply call us on 1800-266-2336 and we’ll help you book a free dental appointment. It's that easy!
+                </p >
+                <div id="carouselExampleSlidesOnly" data-interval="400" class="carousel " data-bs-ride="carousel" >
+                    <div class="carousel-inner p-3">
+                        <div class="carousel-item active" >
+                        <div class="shadow p-3 my-3" id="shadowbox">
+                    <div class="row">
+                        <div class="col-3 text-center" style="text-align: end;">
+                            <img class="w-100" src="images/icon-5.jpg" alt="">
+                        </div>
+                        <div class="col-9 my-auto">
+                            <h6 class="pl-2 ">Get started using your phone, tablet or any device</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow-sm p-3 my-3" id="shadowbox">
+                    <div class="row">
+                        <div class="col-3 text-center" style="text-align: end;">
+                            <img class="w-100" src="images/icon-7.jpg" alt="">
+                        </div>
+                        <div class="col-9 my-auto">
+                            <h6 class="pl-2 ">We will schedule your appointment with an expert</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow-sm p-3 my-3" id="shadowbox">
+                    <div class="row">
+                        <div class="col-3 text-center" style="text-align: end;">
+                            <img class="w-100" src="images/icon-6.jpg" alt="">
+                        </div>
+                        <div class="col-9 my-auto">
+                            <h6 class="pl-2 ">Talk to a dentist</p>
+                        </div>
+                    </div>
+                </div>
+                        </div>
+                        <div class="carousel-item">
+                        <div class="shadow-sm p-3 my-3" id="shadowbox">
+                    <div class="row">
+                        <div class="col-3 text-center" style="text-align: end;">
+                            <img class="w-100" src="images/icon-5.jpg" alt="">
+                        </div>
+                        <div class="col-9 my-auto">
+                            <h6 class="pl-2 ">Get started using your phone, tablet or any device</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow p-3 my-3" id="shadowbox">
+                    <div class="row">
+                        <div class="col-3 text-center" style="text-align: end;">
+                            <img class="w-100" src="images/icon-7.jpg" alt="">
+                        </div>
+                        <div class="col-9 my-auto">
+                            <h6 class="pl-2 ">We will schedule your appointment with an expert</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow-sm p-3 my-3" id="shadowbox">
+                    <div class="row">
+                        <div class="col-3 text-center" style="text-align: end;">
+                            <img class="w-100" src="images/icon-6.jpg" alt="">
+                        </div>
+                        <div class="col-9 my-auto">
+                            <h6 class="pl-2 ">Talk to a dentist</p>
+                        </div>
+                    </div>
+                </div>
+                        </div>
+                        <div class="carousel-item">
+                        <div class="shadow-sm p-3 my-3" id="shadowbox">
+                    <div class="row">
+                        <div class="col-3 text-center" style="text-align: end;">
+                            <img class="w-100" src="images/icon-5.jpg" alt="">
+                        </div>
+                        <div class="col-9 my-auto">
+                            <h6 class="pl-2 ">Get started using your phone, tablet or any device</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow-sm p-3 my-3" id="shadowbox">
+                    <div class="row">
+                        <div class="col-3 text-center" style="text-align: end;">
+                            <img class="w-100" src="images/icon-7.jpg" alt="">
+                        </div>
+                        <div class="col-9 my-auto">
+                            <h6 class="pl-2 ">We will schedule your appointment with an expert</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow p-3 my-3" id="shadowbox">
+                    <div class="row">
+                        <div class="col-3 text-center" style="text-align: end;">
+                            <img class="w-100" src="images/icon-6.jpg" alt="">
+                        </div>
+                        <div class="col-9 my-auto">
+                            <h6 class="pl-2 ">Talk to a dentist</p>
+                        </div>
+                    </div>
+                </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <div class="col-md-5 my-auto text-center">
+                <img class="w-75" src="images/mobile.png" alt="">
+            </div>
+            <div class="col-md-1"></div>
+
+        </div>
         
     </div>
+    <footer class="py-4" style="background: url(images/bg3.svg);background-size: cover;background-position:top;">
+        <div class="container my-3">
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md-8">
+                    <img class="w-25" src="images/logo.png" alt="">
+                    <br>
+                    <br>
+                </div>
+                <div class="col-md-4 text-dark my-auto " style="text-align: end;">
+                    <a href="" class="text-white h5" style="text-decoration: none;">Terms & Conditions</a>
+                    <br>
+                    <a href="" class="text-white h5" style="text-decoration: none;">Powered with LOGY.AI</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
